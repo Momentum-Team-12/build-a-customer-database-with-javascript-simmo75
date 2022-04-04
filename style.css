@@ -1,0 +1,20 @@
+#allcustomers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+.row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .oswaldfont {
+    font-family: 'Oswald';
+    font-size: x-large;
+    font-weight: normal;
+  }  
