@@ -1,25 +1,8 @@
-#allcustomers {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+.font-os {
+  font-family: 'Open Sans';
 
-.row {
-    display: flex;
-    justify-content: left;
-  }
 
-  .card {
-    width: 50%;
-  }
-
-  .oswaldfont {
-    font-family: 'Oswald';
-    font-size: x-large;
-    font-weight: normal;
-  }  
-
-  .font-os {
-    font-family: 'Open Sans';
-    padding-left: 1%;
-  }
+}
+.oswaldfont {
+  font-family: 'Oswald';
+}
