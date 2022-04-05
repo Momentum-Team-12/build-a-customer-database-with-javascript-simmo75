@@ -18,12 +18,13 @@
 //    `
 // }
 
-//    function capitalizeFirstLetter() {
-//     return customer.name.title.charAt(0).toUpperCase() + customerCard.slice(1);
-//   }
+   function capitalizeFirstLetter(word) {
+     console.log("caps")
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
 
-//   console.log(capitalizeFirstLetter('shiz!')); // Shiz!
-//This was my first attempt
+  console.log(capitalizeFirstLetter('shiz!')); // Shiz!
+
 
 
 
@@ -53,7 +54,7 @@ for (let customer of customers){
   custDiv.classList.add("person")
 
   let nameEl = document.createElement('h3')
-  nameEl.innerText = `${customer.name.first} ${customer.name.last}`
+  nameEl.innerText = `${capitalizeFirstLetter (customer.name.first)} ${capitalizeFirstLetter (customer.name.last)}`
   custDiv.appendChild(nameEl)
   allCustomersDiv.appendChild(custDiv)
 
