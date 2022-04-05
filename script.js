@@ -25,7 +25,7 @@
 
   console.log(capitalizeFirstLetter('shiz!')); // Shiz!
 
-
+// function datecut (customerdate)
 
 
 
@@ -63,7 +63,14 @@ for (let customer of customers){
   custDiv.appendChild(locationEl)
   allCustomersDiv.appendChild(custDiv)
 
+  let custDOB = document.createElement('h4')
+  custDOB.innerText = `${moment(customer.dob.date).format("MMM Do,YYYY")}`
+  custDiv.appendChild(custDOB)
 
+  let imgEl = document.createElement ('img')
+  imgEl.src=customer.picture.thumbnail
+  custDiv.appendChild(imgEl)
+  allCustomersDiv.appendChild(custDiv)
 
 }
 
