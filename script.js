@@ -48,12 +48,22 @@ const allCustomersDiv = document.querySelector ('#allCustomersDiv')
 
 for (let customer of customers){
   console.log(`${customer.name.first} ${customer.name.last}`)
+
   let custDiv = document.createElement('div')
   custDiv.classList.add("person")
+
   let nameEl = document.createElement('h3')
   nameEl.innerText = `${customer.name.first} ${customer.name.last}`
   custDiv.appendChild(nameEl)
   allCustomersDiv.appendChild(custDiv)
-  
+
+  let locationEl = document.createElement('h4')
+  locationEl.innerText = `${customer.location.street.number} ${customer.location.street.name}, ${customer.location.city}, ${nameToAbbr(customer.location.state)} ${customer.location.postcode}`
+  custDiv.appendChild(locationEl)
+  allCustomersDiv.appendChild(custDiv)
+
+
+
 }
 
+// add name, address, phone numbers, thumbnail, birthdate, and the date they became a customer, which is stored as registered.date in the data.
